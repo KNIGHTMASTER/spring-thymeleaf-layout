@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">Spring Thymeleaf</title>
+</head>
+<body>
+    <header layout:include="header :: header"></header>
+        <div layout:fragment="content-1">Dynamic Content 1</div>
+        <div layout:fragment="content-2">Dynamic Content 2</div>
+    <footer layout:include="footer :: footer"></footer>
+</body>
+</html>
